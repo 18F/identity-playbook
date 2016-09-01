@@ -1,0 +1,38 @@
+# Site settings
+title: login.gov Playbook
+description: >
+  Write an awesome description here.
+baseurl: ''
+url: ''
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+# Navigation
+navigation:
+ - text: Overview
+   url: /
+ - text: Principles
+   url: /principles/
+ - text: About identity management
+   url: /about/
+
+# Principles
+principles:
+ - anchor: pb-users
+   img: graphic-users
+   text: Focus on user needs
+ - anchor: pb-transparent
+   img: graphic-venn
+   text: Be transparent about how it works
+ - anchor: pb-flexible
+   img: graphic-half-circle
+   text: Build a flexible product
+ - anchor: pb-privacy
+   img: graphic-locks
+   text: Use modern privacy practices
+ - anchor: pb-security
+   img: graphic-hex
+   text: Create responsive security systems
