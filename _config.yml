@@ -1,7 +1,7 @@
 # Site settings
 title: login.gov Playbook
 description: >
-  Write an awesome description here.
+  Improving access to government services through a shared authentication platform
 baseurl: '/identity-playbook'
 url: 'https://pages.18f.gov'
 
