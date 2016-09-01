@@ -1,6 +1,6 @@
 <div class="clearfix">
   <div class="sm-col">
-    <a class="inline-block" href="/">
+    <a class="inline-block" href="{{ '/' | prepend: site.baseurl }}">
       <img alt="login.gov" class="align-bottom" width="151" src="{{ '/img/logo.svg' | prepend: site.baseurl }}">
     </a>
     <h1 class="mb2 h3 red caps ls-5">
@@ -11,7 +11,7 @@
     <div class="sm-show pb-nav--top">
       {% assign url = page.url|remove:'index.html' %}
       {% for link in site.navigation %}
-        <a class="{% if forloop.last != true %}mr3{% endif %} gray {% if page.url == link.url %}active{% endif %}" href="{{ link.url }}">{{ link.text }}</a>
+        <a class="{% if forloop.last != true %}mr3{% endif %} gray {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
       {% endfor %}
     </div>
   </div>

@@ -2,8 +2,8 @@
 title: login.gov Playbook
 description: >
   Write an awesome description here.
-baseurl: ''
-url: ''
+baseurl: '/identity-playbook'
+url: 'https://pages.18f.gov'
 
 # Build settings
 markdown: kramdown
