@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .pb-list {
   &--bullet {
     color: $teal;
@@ -11,6 +15,15 @@
 
   &--checked li { background: url('../img/ico-checked.svg') no-repeat left 2px; }
   &--checkbox li { background: url('../img/ico-checkbox.svg') no-repeat left 2px; }
+}
+
+#pb-nav--side .active {
+  list-style-type: disc;
+
+  a {
+    color: $red;
+    font-weight: $bold-font-weight;
+  }
 }
 
 .pb-nav--top a:hover,
@@ -29,4 +42,10 @@
     top: 100%;
     width: 100%;
   }
+}
+
+.affix {
+  position: fixed;
+  top: 20px;
+  width: 235px;
 }
