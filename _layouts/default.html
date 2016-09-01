@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body>
+  <body data-spy="scroll" data-target="#pb-nav--side-cntnr">
     <div class="site-wrap">
       <div class="bg-navy white center">
         <img alt="US flag" src="{{ '/img/us-flag.png' | prepend: site.baseurl }}" width="13">
@@ -10,5 +10,8 @@
       {{ content }}
     </div>
     {% include footer.html %}
+    {% for js in page.js %}
+      <script src="{{site.baseurl}}/js/{{ js }}"></script>
+    {% endfor %}
   </body>
 </html>
