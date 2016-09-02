@@ -2,6 +2,10 @@ body {
   position: relative;
 }
 
+div:focus {
+  outline: none;
+}
+
 .affix {
   padding-top: 0;
   position: fixed;
