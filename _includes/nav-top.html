@@ -1,5 +1,5 @@
 <nav class="bg-white">
-  <div class="container cntnr-wide px2 py3">
+  <div class="container cntnr-wide px2 pt3 pb0 sm-py3">
     <div class="clearfix">
       <div class="sm-col center sm-left-align">
         <a class="inline-block" href="{{ '/' | prepend: site.baseurl }}">
@@ -9,13 +9,15 @@
           Identity Playbook
         </h1>
       </div>
-      <div class="sm-col-right">
-        <div class="sm-show pb-nav--top">
+      <div class="sm-col-right mxn2 sm-mx0">
+        <ul class="list-reset mt3 mb0 bg-red center pb-nav--top">
           {% assign url = page.url|remove:'index.html' %}
           {% for link in site.navigation %}
-            <a class="{% if forloop.last != true %}mr3{% endif %} gray {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
+            <li class="inline-block {% if forloop.last != true %}border-right sm-mr3{% endif %}">
+              <a class="p2 sm-p0 h5 block white {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
+            </li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
     </div>
   </div>

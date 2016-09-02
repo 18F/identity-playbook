@@ -33,20 +33,36 @@ body {
   }
 }
 
-.pb-nav--top a:hover,
-.pb-nav--top .active, {
-  color: $red;
-  padding-bottom: $space-1;
-  position: relative;
-  text-decoration: none;
+@media #{$breakpoint-sm} {
 
-  &::after {
-    border-bottom: $red 4px solid;
-    border-radius: 12px;
-    content: '';
-    left: 0;
-    position: absolute;
-    top: 100%;
-    width: 100%;
+  .pb-nav--top {
+    background-color: transparent;
+    margin-top: 0;
+    text-align: left;
+
+    a {
+      color: $gray;
+      font-size: $base-font-size;
+    }
+
+    li { border: none; }
+
+    a:hover,
+    .active, {
+      color: $red;
+      padding-bottom: $space-1;
+      position: relative;
+      text-decoration: none;
+
+      &::after {
+        border-bottom: $red 4px solid;
+        border-radius: 12px;
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+      }
+    }
   }
 }
