@@ -8,7 +8,7 @@ $(function() {
   $('#pb-nav--side a, #pb-principles li a').smoothScroll({
     afterScroll: function(options) {
       var $tgt = $(options.scrollTarget);
-      $tgt.attr('tabIndex', '0');
+      $tgt.attr('tabIndex', '-1');
       // Using $tgt[0] allows us to call .focus() on the DOM node itself, not the jQuery collection
       $tgt[0].focus();
     }
