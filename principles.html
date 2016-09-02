@@ -98,9 +98,6 @@ js:
           <p>
             login.gov is working to implement all of these transparency-enhancing features. Further, to help people understand all that is happening, we’re creating a privacy policy that explains how data is shared and what it means to opt out.
           </p>
-          <p>
-            Finally, another way of giving users control is to give them the option to delete their account completely. Currently, policy and technical hurdles are standing in the way of adding this feature to login.gov. But, because of this feature’s importance, the login.gov team is working to implement it in a future iteration.
-          </p>
         </div>
         <div class="mb6" id="pb-flexible">
           <img alt="login.gov" width="151" class="mb3 block" src="{{ '/img/graphic-half-circle.svg' | prepend: site.baseurl }}">
@@ -146,13 +143,13 @@ js:
             Consumer identity management systems store personal information about users so that people don’t have to repeat the verification and authentication processes over and over again. However, collecting and storing personal information raises ethical and legal questions that system designers and developers need to consider. Often, what comes to mind first are technical questions about security: protecting information from unauthorized or illegal access and uses. However, we also need to worry about authorized, legal uses of personal information that violate users’ expectations of privacy. Users of login.gov need to be sure that we’re handling their personal information respectfully and appropriately.
           </p>
           <p>
-            The first step is only collecting the information you absolutely need. And that’s what login.gov is doing. High-assurance identity verification for sensitive tasks does require extensive information collection. However, many activities don’t really require high levels of assurance. Minimizing the amount of information collected and stored not only lowers the security risk; it also reduces worries about re-use and disclosure for users.
+            The first step is only collecting the information you absolutely need. And that’s what login.gov is doing. High-assurance identity verification for sensitive tasks does require extensive information collection. However, many activities don’t require high levels of assurance (LOA) and login.gov supports different LOA so agencies can clearly delineate their users who need lower levels of security from those with more sensitive needs while ensuring usability and data security. Minimizing the amount of information collected and stored not only lowers the security risk; it also reduces worries about re-use and disclosure for users.
           </p>
           <p>
             The next step is to give users as much control as possible over what information is shared. We believe firmly that people own their data, not us, and we will always act accordingly. If people aren’t comfortable with the data requirements for using a system, they should know they don’t have to sign up, and that there are other ways to accomplish their goals.
           </p>
           <p>
-            As we design login.gov, we’re also working to educate users to help them safeguard their own data. We want people to understand why we have to ask for certain kinds of sensitive information, such as social security numbers, and how we’re using them. We’re also working to educate users about any behavioral information we’re collecting about them as they use the system to help us detect any fraud. We believe that if users understand behavioral information logging, they will both have greater trust in the product offered and feel more confident choosing how they use it. These efforts should demonstrate that it’s possible to provide a great experience for users while respecting their privacy.
+            As we design login.gov, we’re also working to educate users to help them safeguard their own data. We want people to understand why we have to ask for certain kinds of sensitive information, such as social security numbers, and how we’re using them.
           </p>
         </div>
         <div class="mb2" id="pb-security">
@@ -172,13 +169,13 @@ js:
             Figuring out who is trying to access personal information and making sure only authorized users can gain access to that information are the keys to consumer identity management. The reason systems like this exist is to secure the user’s identity from those looking to commit theft or fraud.
           </p>
           <p>
-            Being deliberate about security means focusing our attention on what needs to be protected. It means thinking carefully about how to balance protection, accessibility, and liability. Doing this successfully includes educating users about how they can protect themselves or mitigate the effects of crime.
+            Being deliberate about security means focusing our attention on what needs to be protected. It means thinking carefully about how to balance protection and accessibility. Doing this successfully includes educating users about how they can protect themselves or mitigate the effects of crime.
           </p>
           <p>
             In login.gov’s case, for instance, we have to decide exactly what data we store and for how long. We also have to decide what steps users must take to access their information. All of these decisions take careful deliberation to determine what’s the best option for both users and agencies and to ensure maximum functionality.
           </p>
           <p>
-            In building login.gov, we’re using the new standards being drafted by the <a href="https://pages.nist.gov/800-63-3/">National Institute of Standards in Technology</a> (NIST 800-63-3) as one of our guides. These draft standards are taking a very different approach to authentication and identity proofing (how a person logs in and how they verify their identity) from the previous version of the NIST standards (NIST 800-63-2). Additionally we’re adhering to <a href="https://playbook.cio.gov/#play11">government security best practices</a> including FedRAMP, building in the open, conducting rigorous and routine security evaluations in addition to compliance with the Federal Information Security Management Act (FISMA).
+            In building login.gov, we’re adhering to standards put forward by the <a href="https://pages.nist.gov/800-63-3/">National Institute of Standards and Technology</a> (NIST 800-63-2) and will move adapt their new draft standards (NIST 800-63-3) as they become final. The draft standards take a very different approach to authentication and identity proofing (how a person logs in and how they verify their identity) from the current version. Additionally we’re adhering to <a href="https://playbook.cio.gov/#play11">government security best practices</a> including FedRAMP, building in the open, conducting rigorous and routine security evaluations in addition to compliance with the Federal Information Security Management Act (FISMA).
           </p>
         </div>
       </div>
