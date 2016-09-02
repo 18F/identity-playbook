@@ -2,6 +2,13 @@ body {
   position: relative;
 }
 
+.affix {
+  padding-top: 0;
+  position: fixed;
+  top: 1rem;
+  width: 235px;
+}
+
 .pb-list {
   &--bullet {
     color: $teal;
@@ -42,10 +49,4 @@ body {
     top: 100%;
     width: 100%;
   }
-}
-
-.affix {
-  position: fixed;
-  top: 20px;
-  width: 235px;
 }
