@@ -13,7 +13,7 @@
         <ul class="list-reset mt3 mb0 bg-red center pb-nav--top">
           {% assign url = page.url|remove:'index.html' %}
           {% for link in site.navigation %}
-            <li class="inline-block {% if forloop.last != true %}border-right sm-mr3{% endif %}">
+            <li class="inline-block {% if forloop.last != true %}border-right border-white sm-mr3{% endif %}">
               <a class="p2 sm-p0 h5 block white {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
             </li>
           {% endfor %}
