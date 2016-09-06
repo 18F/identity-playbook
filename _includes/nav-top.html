@@ -5,7 +5,7 @@
         <a class="inline-block" href="{{ '/' | prepend: site.baseurl }}">
           <img alt="login.gov" class="align-bottom" width="151" src="{{ '/img/logo.svg' | prepend: site.baseurl }}">
         </a>
-        <h1 class="mt2 mb0 h3 red caps ls-5">
+        <h1 class="mt2 mb0 h4 sm-h3 red caps ls-3 sm-ls-5">
           Identity Playbook
         </h1>
       </div>
@@ -14,7 +14,7 @@
           {% assign url = page.url|remove:'index.html' %}
           {% for link in site.navigation %}
             <li class="inline-block {% if forloop.last != true %}border-right border-white md-mr3{% endif %}">
-              <a class="p2 md-p0 h5 block white {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
+              <a class="py2 {% if forloop.first == true %}pl0 pr1{% elsif forloop.last == true %}pl1 pr0{% else %}px1{% endif %} sm-p2 md-p0 h6 sm-h5 block white {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
             </li>
           {% endfor %}
         </ul>
