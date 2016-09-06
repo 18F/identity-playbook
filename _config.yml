@@ -1,7 +1,8 @@
 # Site settings
 title: login.gov Playbook
 description: >
-  Improving access to government services through a shared authentication platform
+  The identity principles will help developers and technologists in government agencies build
+  usable, secure, and privacy-protecting consumer identity management systems.
 baseurl: '/identity-playbook'
 url: 'https://pages.18f.gov'
 
