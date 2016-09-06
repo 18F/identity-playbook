@@ -13,7 +13,7 @@ $(function() {
     }
   });
 
-  $('#pb-nav--side a, #pb-principles li a').smoothScroll({
+  $('#pb-nav--side a, #principles li a').smoothScroll({
     afterScroll: function(options) {
       var $tgt = $(options.scrollTarget);
       $tgt.attr('tabIndex', '-1');
