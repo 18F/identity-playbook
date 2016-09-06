@@ -1,7 +1,7 @@
 <nav class="bg-white">
-  <div class="container cntnr-wide px2 pt3 pb0 sm-py3">
+  <div class="container cntnr-wide px2 pt3 pb0 md-py3">
     <div class="clearfix">
-      <div class="sm-col center sm-left-align">
+      <div class="md-col center md-left-align">
         <a class="inline-block" href="{{ '/' | prepend: site.baseurl }}">
           <img alt="login.gov" class="align-bottom" width="151" src="{{ '/img/logo.svg' | prepend: site.baseurl }}">
         </a>
@@ -9,12 +9,12 @@
           Identity Playbook
         </h1>
       </div>
-      <div class="sm-col-right mxn2 sm-mx0">
+      <div class="md-col-right mxn2 md-mx0">
         <ul class="list-reset mt3 mb0 bg-red center pb-nav--top">
           {% assign url = page.url|remove:'index.html' %}
           {% for link in site.navigation %}
-            <li class="inline-block {% if forloop.last != true %}border-right border-white sm-mr3{% endif %}">
-              <a class="p2 sm-p0 h5 block white {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
+            <li class="inline-block {% if forloop.last != true %}border-right border-white md-mr3{% endif %}">
+              <a class="p2 md-p0 h5 block white {% if page.url == link.url %}active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
             </li>
           {% endfor %}
         </ul>

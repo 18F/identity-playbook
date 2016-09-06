@@ -5,9 +5,9 @@ permalink: /
 ---
 
 <div class="bg-white">
-  <div class="container cntnr-wide px2 pb4 sm-pb5">
-    <img alt="" width="240" class="ml6 right sm-show" src="{{ '/img/graphic-circle.png' | prepend: site.baseurl }}">
-    <p class="pt4 sm-pt2 h4 overflow-hidden serif line-height-3 fs-lead">
+  <div class="container cntnr-wide px2 pb4 md-pb5">
+    <img alt="" width="240" class="ml6 right md-show" src="{{ '/img/graphic-circle.png' | prepend: site.baseurl }}">
+    <p class="pt4 md-pt2 h4 overflow-hidden serif line-height-3 fs-lead">
       “Identity management,” or making sure that only the correct people get access to systems, is central to delivering public services online. We are sharing these principles to help developers and technologists in government agencies build usable, secure, and privacy-protecting consumer identity management systems.
     </p>
   </div>
@@ -20,9 +20,9 @@ permalink: /
     </h2>
     <div class="flex flex-wrap mxn1">
       {% for p in site.principles %}
-        <div class="col col-12 sm-col-6 mb2 px1">
+        <div class="col col-12 md-col-6 mb2 px1">
           <a class="p3 flex flex-center bg-white navy rounded-med" href="{{ site.baseurl }}/principles/#{{ p.anchor }}">
-            <img alt="" height="50" width="50" class="flex-none mr2 sm-mr3" src="{{ site.baseurl }}/img/{{ p.img }}.svg">
+            <img alt="" height="50" width="50" class="flex-none mr2 md-mr3" src="{{ site.baseurl }}/img/{{ p.img }}.svg">
             <div class="flex-auto h3 bold line-height-1">
               {{ p.text }}
             </div>
