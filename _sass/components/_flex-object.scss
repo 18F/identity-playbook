@@ -1,0 +1,11 @@
+.flex { 
+  display: -webkit-flex; /* Safari 6.1+ */
+}
+
+.flex-auto {
+  -webkit-flex: 1 1 auto;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+}
