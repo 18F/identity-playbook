@@ -2,10 +2,6 @@
 
 This repo is deprecated, the page content has been moved to the https://github.com/18f/identity-site repo.
 
-### login.gov Playbook
-
-**Work in progress!!!**
-
 #### Dependencies
 
 - Ruby 2.3.0
