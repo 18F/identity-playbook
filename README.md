@@ -1,6 +1,6 @@
-### login.gov Playbook
+# Deprecated
 
-**Work in progress!!!**
+This repo is deprecated, the page content has been moved to the https://github.com/18f/identity-site repo.
 
 #### Dependencies
 
@@ -11,13 +11,6 @@
 
 ```
 $ jekyll serve
-```
-
-**JS install / bundle**:
-
-```
-$ npm install
-$ npm start
 ```
 
 #### Public domain

@@ -1,20 +1,15 @@
+<!DOCTYPE html>
+<html lang='en'>
 <head>
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>login.gov</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
+  <meta http-equiv="refresh" content="0;url={{ page.redirecturl }}" />
+  <title>Page Moved</title>
 
-  <link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
   <link href="{{ "/img/favicon.png" | prepend: site.baseurl }}" rel="icon" type="image/png">
   <link href="{{ "/img/favicon.ico" | prepend: site.baseurl }}" rel="icon" type="image/ico">
-
-  <!--[if lt IE 9]>
-    <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
-    <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
-  <![endif]-->
-
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,3 +22,12 @@
     ga('send', 'pageview');
   </script>
 </head>
+<body>
+  This page has moved. <a href="{{ page.redirecturl }}">Visit the new page</a>.
+
+  {{ content }}
+
+  <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+  <script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA&subagency=18F" id="_fed_an_ua_tag"></script>
+</body>
+</html>
