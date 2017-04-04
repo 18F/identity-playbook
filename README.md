@@ -1,3 +1,7 @@
+# Deprecated
+
+This repo is deprecated, the page content has been moved to the https://github.com/18f/identity-site repo.
+
 ### login.gov Playbook
 
 **Work in progress!!!**
